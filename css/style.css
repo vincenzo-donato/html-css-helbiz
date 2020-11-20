@@ -1,0 +1,300 @@
+/* body rules */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+}
+
+/* reused rules */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.right-border{
+  border-right: 30px solid white;
+}
+
+.grey{
+  background-color:rgb(233, 235, 230);
+}
+
+.border{
+  border: 10px solid white;
+}
+
+.top{
+  margin-top: 450px;
+}
+
+/* header */
+.header-top {
+  height: 80px;
+  line-height: 80px;
+}
+
+#barra{
+  color: black;
+  font-size: 20px;
+}
+
+.fixed{
+  position: fixed;
+  margin-left: 55%;
+}
+
+ul.navbar-menu li,
+ul.navbar-language li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* 1rem equivale al font specificato nel body,
+nel nostro caso 1rem 16px
+quindi ad esempio 1.2rem sarà uguale a 16 * 1.2 pixel */
+
+ul.navbar-menu li a,
+ul.navbar-language li a {
+  color: #343434;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header-top .logo {
+  vertical-align: middle;
+}
+
+#barra-l{
+  border-right: 2px solid black;
+  padding-right: 10px;
+}
+
+ul.navbar-language :not(:last-child) a {
+  border-right: 2px solid black;
+  padding-right: 10px;
+}
+
+/* jumbo */
+.jumbo {
+  background-image: url('../img/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  position: relative;
+}
+
+.jumbo h1 {
+  font-size: 32px;
+}
+
+.jumbo p {
+  margin: 10px 0;
+}
+
+.jumbo .testo {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px){
+  .jumbo h1 {
+    font-size: 26px;
+  }
+}
+/* end jumbo */
+
+/* start main  */
+
+/* start  prodotti */
+.img-bike{
+  width: 100%;
+}
+
+#prodotti .row h2{
+  color: black;
+}
+
+#prodotti .row p{
+  color: black;
+}
+/* end prodotti */
+
+/* start steps */
+#steps{
+  height: 500px;
+  background-image: url('../img/index-banner.1f6fd0a.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#steps .row{
+  position: relative;
+}
+
+#steps img{
+  height: 500px;
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  transform:translateX(-50%);
+}
+
+#steps .row h2{
+  margin-left: 10px;
+  padding-top: 550px;
+  width: 60%;
+  color: black;
+}
+
+#steps .row p{
+  color: black;
+}
+
+#steps .row .testo-step{
+  padding-top: 550px;
+  margin-left: 10px;
+}
+/* steps responsive */
+@media screen and (max-width:768px){
+  #steps .row .testo-step{
+    padding-top: 10px;
+  }
+ #steps img{
+   top: 5%;
+ }
+}
+/* end steps */
+
+/* start mobility */
+.scooter{
+  height: 450px;
+  margin-top: 350px;
+  background-image: url('../img/scooter.jpg');
+  position: relative;
+}
+
+.text-mob{
+  top: 50%;
+  transform: translatey(-50%);
+  position: absolute;
+  color: white;
+  width: 15%;
+}
+
+.text-mob a{
+  color: white;
+}
+/* end mobility */
+
+/* start app */
+.bk{
+  background: linear-gradient(#41566a,#252f38) 50% no-repeat;
+}
+
+.box-size{
+  height: 400px;
+}
+
+.box-img{
+ width: 80%;
+ margin: 20px auto;
+}
+
+.img-app{
+ width: 50%;
+ height: 240px;
+}
+
+.img-app-down{
+  background-image: url('../img/city.jpg');
+  background-size: cover;
+  position: relative;
+}
+
+#app .container .row a, p, h2{
+  color: white;
+}
+
+#none{
+  float: none;
+}
+/* end app */
+
+/* start family */
+#family{
+  height: 500px;
+  position: relative;
+  margin-bottom: 30px;
+  background-image: url('https://nonsoloprogrammi.net/wp-content/uploads/2015/01/collage.jpg');
+}
+
+.piccolo-contenitore{
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  font-size: 30px;
+}
+
+.piccolo-contenitore li{
+  display: inline-block;
+}
+
+.piccolo-contenitore h3, a{
+  color: black;
+}
+
+.color i{
+  color: black;
+}
+/* end family */
+
+/* end main */
+
+/* start footer */
+footer{
+  background-color:black ;
+}
+
+footer .row .icone{
+  display: inline-block;
+  font-size: 30px;
+}
+
+footer li{
+  margin: 10px 0;
+}
+
+.dimenzioni{
+  height: 200px;
+  line-height: 150px;
+  margin-top: 50px;
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+}
+
+footer .row a, li, i{
+  color: white;
+}
+
+footer h2{
+  color: white;
+  font-size: 30px;
+}
+
+.footer-down img {
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 50px 5px;
+}
+/* end footer */
